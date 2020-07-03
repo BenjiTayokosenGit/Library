@@ -1,0 +1,42 @@
+body{
+    font-family: serif;
+    font-size:large;
+    background: url("backgrounds/background1.jpg");
+    overflow: hidden;
+    background-size: cover;
+}      
+#flipbook .page{
+    background: url("Book-char/paper.jpg");
+}
+#flipbook .p3{            
+    background: url("Book-char/First-page.jpg");
+    background-size: cover;            
+}
+#flipbook .Last{            
+    background: url("Book-char/Last-page.jpg");
+    background-size: contain;
+}
+#flipbook #cover{
+    background: url("Book-char/cover.jpg");
+    background-size: contain;
+}
+#flipbook .shadow,
+#flipbook.shadow{
+  -webkit-box-shadow: 0 4px 10px black;
+  -moz-box-shadow: 0 4px 10px black;
+  -ms-box-shadow: 0 4px 10px black;
+  -o-box-shadow: 0 4px 10px black;
+  box-shadow: 0 4px 10px black;
+}
+h1,h5{
+    width:150px;
+    margin-top: 120px;
+    margin-left: 80px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: whitesmoke;
+}
+.black{
+    color:black;
+}

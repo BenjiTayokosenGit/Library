@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"> 
+<xs:element name="book">
+  <xs:complexType>
+   <xs:sequence> 
+     <xs:element name="title"  type="xs:string"/>
+     <xs:element name="title_keywords">
+        <xs:complexType>
+          <xs:sequence>
+             <xs:element name="key" minOccurs="1" maxOccurs="unbounded"/>
+          </xs:sequence>
+        </xs:complexType>
+     </xs:element>
+     <xs:element name="writer"  type="xs:string"/>
+     <xs:element name="writer_keywords">
+        <xs:complexType>
+           <xs:sequence>
+              <xs:element name="key" minOccurs="1" maxOccurs="unbounded"/>
+           </xs:sequence>
+        </xs:complexType>
+     </xs:element>
+     <xs:element name="about_the_Book"  type="xs:string"/>
+     <xs:element name="picture">
+       <xs:complexType>
+          <xs:sequence>
+            <xs:element name="url"  type="xs:string"/>
+            <xs:element name="description"  type="xs:string"/>
+          </xs:sequence>
+       </xs:complexType>
+     </xs:element>
+     <xs:element name="pages">
+       <xs:complexType>
+         <xs:sequence>
+          <xs:element name="number" type="xs:decimal"/>
+          <xs:element name="page" minOccurs="0" maxOccurs="unbounded">
+             <xs:complexType>
+               <xs:sequence>
+                 <xs:element name="content">
+                    <xs:complexType>
+                      <xs:sequence>
+                       <xs:element name="paragraph" type="xs:string" minOccurs="1" maxOccurs="unbounded" />
+                      </xs:sequence>
+                    </xs:complexType>
+                 </xs:element>
+               </xs:sequence>
+             </xs:complexType>
+          </xs:element>
+         </xs:sequence>
+       </xs:complexType>
+     </xs:element>
+     <xs:element name="comment" type="xs:string"/>
+     <xs:element name="evaluation" type="xs:decimal"/>
+   </xs:sequence> 
+  </xs:complexType>
+</xs:element>
+</xs:schema>
